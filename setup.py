@@ -1,28 +1,28 @@
 #!/usr/bin/env python
 """
-memcache_rehasher
+memcached_rehasher
 ======
 
-A pure python implementation of a consistent hasher for memcache.
+A pure python implementation of a consistent hasher for memcached.
 Its missrate is similar to continuum, but it has O(1) per request
 performane vs continiums O(lg(n)) per request performnace where n is
-the number of servers in your memcache collecion.
+the number of servers in your memcached collecion.
 
 """
 
 from setuptools import setup
 
 setup(
-    name='python_consistent_memcache',
+    name='python_consistent_memcached',
     version='0.0.0',
     author='Adam DePrince',
     author_email='adeprince@nypublicradio.org',
-    description='python-memcache with consistent hashing',
+    description='python-memcached with consistent hashing',
     long_description=__doc__,
     py_modules = [
-        "consistent_memcache/__init__",
+        "consistent_memcached/__init__",
         ],
-    packages = ["consistent_memcache"],
+    packages = ["consistent_memcached"],
     zip_safe=True,
     license='GPL',
     include_package_data=True,
@@ -30,9 +30,9 @@ setup(
         ],
     scripts = [
         ],
-    url = "https://github.com/wnyc/python_consistent_memcache",
+    url = "https://github.com/wnyc/python_consistent_memcached",
     install_requires = [
-        'python_memcache',
+        'python-memcached',
         ]
 )
 
