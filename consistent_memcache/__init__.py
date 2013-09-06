@@ -13,7 +13,7 @@ def make_consistent_weighted_buckets(weighted_machines, slots=16387*2+1):
     machines = []
     for machine, count in weighted_machines:
         machines.extend([machine]*count)
-    return make_consistent_for_modulus(machines, slots)
+    return make_consistent_buckets(machines, slots)
     
  
 def make_consistent_buckets(machines, slots=16387):
@@ -41,7 +41,7 @@ def build_streams(hosts):
 
 def _Random(key, _cache={}):
     # Memoizing randomizers allows us to avoid collisions between
-    # duplciate keys when called from make_consistent_for_modulus
+    # duplciate keys when called from make_consistent_buckets
     if key in _cache:
         return _cache[key]
     _cache[key] = Random(key)
