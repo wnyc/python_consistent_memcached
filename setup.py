@@ -22,7 +22,7 @@ setup(
     py_modules = [
         "python_consistent_memcached/__init__",
         ],
-    packages = ["python_consistent_memcached"],
+    packages = ["consistent_memcached"],
     zip_safe=True,
     license='GPL',
     include_package_data=True,
