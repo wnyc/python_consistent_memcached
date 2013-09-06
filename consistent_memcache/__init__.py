@@ -1,9 +1,9 @@
 from md5 import md5
 from random import Random
-from memcached import Cient as _Client
+import memcache
 
 
-class Client(_Client):
+class Client(memcache.Client):
     def _init_buckets(self):
         servers = [(server, server.weight) for server in self.servers]
         self.buckets = make_consistent_weighted_buckets(servers)

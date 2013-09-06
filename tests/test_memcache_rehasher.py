@@ -1,6 +1,6 @@
 import unittest
 
-from consistent_memcached import make_consistent_buckets, make_consistent_weighted_buckets
+from consistent_memcache import make_consistent_buckets, make_consistent_weighted_buckets
 
 class TestSimpleCases(unittest.TestCase):
     def test_3(self):
@@ -20,3 +20,5 @@ class TestWeighted(unittest.TestCase):
         
     
     
+if __name__=="__main__":
+    unittest.main()
