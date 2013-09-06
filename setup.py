@@ -20,7 +20,7 @@ setup(
     description='python-memcached with consistent hashing',
     long_description=__doc__,
     py_modules = [
-        "python_consistent_memcached/__init__",
+        "consistent_memcached/__init__",
         ],
     packages = ["consistent_memcached"],
     zip_safe=True,
