@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-memcached_rehasher
+python_consistent_memcached
 ======
 
 A pure python implementation of a consistent hasher for memcached.
@@ -20,9 +20,9 @@ setup(
     description='python-memcached with consistent hashing',
     long_description=__doc__,
     py_modules = [
-        "consistent_memcached/__init__",
+        "consistent_memcache/__init__",
         ],
-    packages = ["consistent_memcached"],
+    packages = ["consistent_memcache"],
     zip_safe=True,
     license='GPL',
     include_package_data=True,
